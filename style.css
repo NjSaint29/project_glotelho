@@ -1,0 +1,57 @@
+body{
+    padding: 2%;
+}
+header{
+    background-color: rgb(9, 6, 36);
+    height: fit-content;
+}
+.addline{
+    height: 30px;
+    background-color: rgb(249, 249, 250);
+
+}
+.addline span{
+    margin: 50px;
+
+}
+.logoline{
+    display: flex;
+    height: fit-content;
+}
+.logoline span{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.search{
+    padding-top: 5px;
+    margin-left: 20%;
+    max-width:;
+    form {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      
+      input[type="text"] {
+        flex: 1;
+        border: none;
+        outline: none;
+        padding: 10px;
+      }
+      
+      button {
+        background-color: #f0f0f0;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      
+      /* Optional: Style the search icon */
+      .fa-search {
+        font-size: 18px;
+      }
+      
+    
+}
