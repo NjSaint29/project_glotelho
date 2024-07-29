@@ -1,55 +1,64 @@
-*{
+* {
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
 }
-.main{
+
+.main {
   background-color: aliceblue;
 }
-.head{
+
+.head {
   background-color: rgb(2, 2, 39);
   padding-left: 5%;
   padding-right: 5%;
- 
+
 }
-.header{
+
+.header {
 
   height: fit-content;
   width: 100%;
- background-color: rgb(2, 2, 39);
+  background-color: rgb(2, 2, 39);
 }
-.logoline{
+
+.logoline {
   display: inline-flex;
   padding: 0 0.5rem 0 0.5rem;
   align-items: center;
   width: 100%;
-  position:a;
+  position: a;
 }
-.addline{
-  
+
+.addline {
+
   margin-top: 5px;
   background-color: rgb(3, 3, 65);
 }
-.addline img{
+
+.addline img {
   width: 100%;
 }
-.logo{
-  
-  img{
-      width: 100%;
-      height: auto;
-      margin: 4px;
-          }
+
+.logo {
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 4px;
+  }
 }
-.search{
+
+.search {
   align-items: center;
   width: 100%;
   border: solid 2px;
   height: 30px;
   border-color: rgb(2, 2, 39);
   border-radius: 5px;
-  padding: 0.5rem;   
+  padding: 0.5rem;
   background-color: rgb(255, 255, 255);
 }
+
 .search input {
   outline: none;
   margin: 0.5rem;
@@ -57,7 +66,8 @@
   background-color: transparent;
   border: none
 }
-#search{
+
+#search {
   width: 8rem;
   height: 3rem;
   background-color: rgba(250, 198, 86, 0.836);
@@ -67,79 +77,105 @@
   padding-left: 10px;
   padding-right: 10px;
 }
-.logoline a{
+
+.logoline a {
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
 }
-.logoline a img{
+
+.logoline a img {
   width: 50%;
   margin: 0 0.5rem 0 0.5rem;
 
 }
-.gift{
-  width: fit-content;
-  overflow-x: scrol;
-  white-space: nowrap;
-  display: flexbox;
-  justify-content: space-around;
-  flex-wrap: wrap;
 
-  
+.gift {
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: inline-block;
+  justify-content: space-around;
+  scroll-behavior: smooth;
+
+
+
 }
-.gift a{
+
+.gift a {
   color: white;
   margin-top: 1.5rem;
   padding-inline: 20px;
   font-size: 1.5rem;
-  justify-content:center;
+  justify-content: center;
   text-decoration: none;
 }
-.gift a img{
+
+.gift a img {
   width: 2%;
   position: relative;
   top: 10px;
   right: 10px
-
 }
+
 /*main bosy*/
-.main{
+.main {
   padding-left: 5%;
   padding-right: 5%;
   background-color: aliceblue;
 }
-.sliderline{
+
+.sliderline {
   margin: 4px;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100%;
+  flex-wrap: wrap;
+  
 
 }
-.slide1{
+
+.slide1 {
   margin: 5px;
   border: solid 2px white;
   width: 20%;
   height: 400px;
   background-color: white;
   border-radius: 5px;
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
 }
-.slide2{
+
+.slide1 ul{
+  list-style-type: none;
+  
+}
+.slide1 ul li{
+  
+ 
+  margin-top: 5px;
+  flex-wrap: nowrap;
+ 
+  font-size: smaller;
+}
+
+.slide2 {
   margin: 5px;
   border: solid 2px white;
-  width: 60%;
+  width: 57%;
   height: 400px;
   background-color: white;
   border-radius: 5px;
 }
-.slide3{
+
+.slide3 {
   margin: 5px;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 20%;
 }
-.slide3a{
+
+.slide3a {
   background-repeat: no-repeat;
   border: solid 2px white;
   width: 100%;
@@ -148,7 +184,8 @@
   border-radius: 5px;
 
 }
-.slide3b{
+
+.slide3b {
   border: solid 2px white;
   width: 100%;
   height: 50%;
@@ -156,30 +193,39 @@
   border-radius: 5px;
 
 }
-.slide3a img{
+
+.slide3a img {
   width: 100%;
-  height: auto;
+  
 }
-.slide3b img{
+
+.slide3b img {
   width: 100%;
-  height: auto;
+ 
 }
-.slider{
-  overflow-x: scroll;
+
+.slider {
+  overflow-x: auto;
   white-space: nowrap;
-  scrollbar-color: transparent;
 }
-#slider1 img{
-  animation: slide cubic-bezier(0.165, 0.84, 0.44, 1) 10000ms infinite;
+
+#slider1 img {
+  animation: slide 15s infinite;
 }
-#slider1 img{
+
+#slider1 img {
   display: inline-flex;
   object-fit: cover;
+  height: 400px;
+
 }
-@keyframes slide{
-  0%{transform: translateX(0%);
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
   }
-  100%{
+
+  100% {
     transform: translateX(-300%);
   }
 }
