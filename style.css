@@ -140,6 +140,7 @@
   width: 20%;
 }
 .slide3a{
+  background-repeat: no-repeat;
   border: solid 2px white;
   width: 100%;
   height: 50%;
@@ -154,4 +155,31 @@
   background-color: white;
   border-radius: 5px;
 
+}
+.slide3a img{
+  width: 100%;
+  height: auto;
+}
+.slide3b img{
+  width: 100%;
+  height: auto;
+}
+.slider{
+  overflow-x: scroll;
+  white-space: nowrap;
+  scrollbar-color: transparent;
+}
+#slider1 img{
+  animation: slide cubic-bezier(0.165, 0.84, 0.44, 1) 10000ms infinite;
+}
+#slider1 img{
+  display: inline-flex;
+  object-fit: cover;
+}
+@keyframes slide{
+  0%{transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-300%);
+  }
 }
