@@ -92,7 +92,7 @@
 
 .gift {
   overflow-x: scroll;
-  white-space: nowrap;
+  white-space: wrap;
   display: inline-block;
   justify-content: space-around;
   scroll-behavior: smooth;
@@ -108,6 +108,7 @@
   font-size: 1.5rem;
   justify-content: center;
   text-decoration: none;
+
 }
 
 .gift a img {
