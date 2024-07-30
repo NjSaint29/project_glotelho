@@ -130,6 +130,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: fit-content;
   
 
 }
@@ -137,13 +138,13 @@
 .slide1 {
   margin: 5px;
   border: solid 2px white;
-  width: 20%;
-  height: 400px;
+  width: fit-content;
+  height: 100%;
   background-color: white;
   border-radius: 5px;
   display: flex;
-  justify-content:space-between;
   flex-direction: column;
+  padding-right: 10px;
 }
 
 .slide1 ul{
@@ -162,10 +163,14 @@
 .slide2 {
   margin: 5px;
   border: solid 2px white;
-  width: 57%;
-  height: 400px;
+  width: 50%;
+  height: 50%;
   background-color: white;
   border-radius: 5px;
+}
+.slide2 img{
+  width: 50%;
+  height: 50%;
 }
 
 .slide3 {
@@ -173,13 +178,13 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 20%;
+  width: fit-content;
 }
 
 .slide3a {
   background-repeat: no-repeat;
   border: solid 2px white;
-  width: 100%;
+  width: 50%;
   height: 50%;
   background-color: white;
   border-radius: 5px;
@@ -188,7 +193,7 @@
 
 .slide3b {
   border: solid 2px white;
-  width: 100%;
+  width: 50%;
   height: 50%;
   background-color: white;
   border-radius: 5px;
@@ -229,4 +234,19 @@
   100% {
     transform: translateX(-300%);
   }
+}
+.categline{
+  box-sizing: content-box;
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  justify-content:center;
+}
+.categitem img{
+  margin: 1rem 3rem 0 3rem;
+ 
 }
