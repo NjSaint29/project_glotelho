@@ -90,16 +90,7 @@
 
 }
 
-.gift {
-  overflow-x: scroll;
-  white-space: wrap;
-  display: inline-block;
-  justify-content: space-around;
-  scroll-behavior: smooth;
 
-
-
-}
 
 .gift a {
   color: white;
@@ -108,7 +99,16 @@
   font-size: 1.5rem;
   justify-content: center;
   text-decoration: none;
+  text-wrap: nowrap;
 
+}
+
+.gift {
+  overflow-x: scroll;
+  white-space: nowrap;
+  display: inline-block;
+  justify-content: center;
+  scroll-behavior: smooth;
 }
 
 .gift a img {
@@ -235,6 +235,11 @@
     transform: translateX(-300%);
   }
 }
+
+
+
+
+}
 .categline{
   box-sizing: content-box;
   display: flex;
@@ -250,3 +255,65 @@
   margin: 1rem 3rem 0 3rem;
  
 }
+.fel{
+  margin: 10px 0 10px 0;
+  padding: 5px;
+  background-color: white;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  width: 100%;
+}
+.fel h3{
+  font-size: 2rem;
+  width: 97%;
+}
+#felibt{
+  align-self:right;
+  float: right;
+  background-color: rgb(5, 5, 80);
+  height: fit-content;
+  color: white;
+  text-wrap: nowrap;
+  padding: 5px;
+  margin-right: 5px;
+  border-radius: 5px
+
+}
+.phoneline{
+  box-sizing: content-box;
+  display: flex;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  overflow-x: scroll;
+  flex-wrap: nowrap;
+  justify-content:left;
+}
+.phone{
+  background-color: white;
+  padding: 5px;
+  margin: 0 10px 10px 10px;
+  border-radius: 5px;
+  justify-items: center;
+  text-align: left;
+  text-wrap: nowrap;
+}
+.phone img{
+  width: 80%;
+  height: auto;
+}
+.brandline{
+  justify-items: center;
+  padding: 10px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+}
+.brandline img{
+  width: 10rem;
+}
+
+
+  
