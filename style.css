@@ -38,7 +38,7 @@ header .animation_image img{
   margin-top: 10px;
   justify-content: space-between;
   gap: 10px;
-  flex-wrap: wrap;
+  
 
 }
 .header_nav_search_bar{
@@ -124,14 +124,15 @@ border-radius: 5px;
   width: 100%;
   overflow-x:hidden;
   margin-top: 10px;
-  background-color: aliceblue;
+  
   
 }
 .gift_nav_item{
   display: flex;
   background-color: #000a2b;
   align-items: center;
-  gap: 4px;
+  gap:5px;
+  margin-left: 50px;
   
 
 
