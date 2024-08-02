@@ -69,8 +69,9 @@ header .animation_image img{
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-wrap: wrap;
-  
+  flex-wrap: nowrap;
+
+
   
   
   
@@ -148,9 +149,9 @@ border-radius: 5px;
   text-wrap: nowrap;
 }
 .slider_line{
-  background-color: blue;
+  padding: 10px 0 10px 0;
   width: 100%;
-  height: fit-content;
+  height: 330px;
   display: flex;
   align-items: center;
 
@@ -163,15 +164,89 @@ border-radius: 5px;
   border: solid white 1px;
   background-color: white;
   padding: 5px;
+  flex-shrink: 0;
+  border-radius: 5px;
 
 }
 .slider_line_slide1 a{
-  font-size: ;
+  font-size: var(--font-default) ;
+  margin-top: 10px;
+  text-wrap: wrap;
+  text-decoration: none;
+  color: black;
 }
 
+.slider_line_slide2{
+  display: flex;
+  overflow-x: hidden;
+  width: 60%;
+  background-color: white;
+  height: 315px;
+  border-radius: 5px;
+  margin: 0 5px 0 5px;
 
+  
+}
+.slider_line_slide2 img{
+  width:auto;
+  height: 100%px;
+}
+.slider_line_slide3{
+  display: flex;
+  flex-flow: column nowrap;
+  width: 20%;
+  height: 320px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.slider_line_slide3a {
+  height: 50%;
+  display: flex;
+  
+}
+.slider_line_slide3a img{
+  width: 100%;
+  border-radius: 5px;
+}
+.categ_line {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px;
+  overflow-x: hidden;
+  gap: 20px;
+  width: 100%;
 
+}
+.categ_line_item{
+  padding: 5px;
+  
 
+}
+
+.categ_line_item img{
+  border-radius: 10px;
+  height: 9rem;
+  width: 9rem;
+  
+
+}
+
+#scroll{
+  width: 30px;
+  height: 70px;
+  position: relative;
+  background-color: white;
+  border: solid rgb(243, 240, 240) 1px;
+}
+
+#categ_scrol{
+  display: flex;
+  align-items: center;
+  background-color:white;
+  border-radius: 5px;
+}
 
 
 
@@ -183,6 +258,7 @@ border-radius: 5px;
   margin-left: auto;
   margin-right: auto;
   flex-shrink: 0;
+  
   
 }
 
