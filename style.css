@@ -517,7 +517,7 @@
     
     .slider_line_slide2{
       display: flex;
-      overflow-x: hidden;
+      overflow-x: scroll;
       width: 100%;
       background-color: transparent;
       height: fit-content;
