@@ -576,15 +576,18 @@
       padding: 10px;
     }
     .categ_line_item{
-      padding: 5px;
-      
+      display: flex;
+      flex-flow: column nowrap;
+      width: 100px;
+      height: 150px;
+      flex-shrink: 0;
     
     }
     
     .categ_line_item img{
       border-radius: 10px;
-      height: 9rem;
-      width: 9rem;
+      height: 50%;
+      width:50px;
       
     
     }
