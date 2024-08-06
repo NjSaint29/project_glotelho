@@ -58,7 +58,7 @@
    
    
   }
-  .fa-bars, .fa-circle-user, .fa-shopping-cart, .fa-shopping-cart{
+  .fa-bars, .fa-circle-user, .fa-shopping-cart,.fa-shopping-cart {
     font-size: 30px !important;
     color: white;
   }
@@ -359,7 +359,7 @@
   }
   :root{
     --primary_color: #000a2b;
-    --width: 99%;
+    --width: 95%;
     --font-default: 13px;
     --font-size: 1.5rem;
   }
@@ -462,9 +462,11 @@
       align-items: center;
       color: inherit;
       gap: 10px;
+      
     }
     .header_nav_search_account a span{
       color: white;
+      display: none;
     }
   
   
@@ -516,15 +518,19 @@
       display: flex;
       overflow-x: hidden;
       width: 100%;
-      background-color: white;
-      height: 315px;
+      background-color: transparent;
+      height: fit-content;
       border-radius: 5px;
       margin: 0 5px 0 5px;
      
     }
     .slider_line_slide2 img{
-      width:auto;
-      height: 100%px;
+      width:92%;
+      height: 200px;
+      margin-left: 5px;
+      margin-right: 5px;
+      border-radius: 5px;
+      border: solid 1px white;
     }
     .slider_line_slide3{
       display: flex;
